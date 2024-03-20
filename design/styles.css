@@ -1,0 +1,234 @@
+:root {
+  --Dark-Blue: #262e38;
+  --Very-Dark-Blue: #131518;
+  --Light-Grey: #969fad;
+  --Medium-Gray: #7c8798;
+  --Orange: #fc7614;
+  --black-gradient: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--Very-Dark-Blue, #131518);
+  display: flex;
+  padding: 9.625rem 1.5rem 9.5625rem 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Overpass", sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 100%;
+}
+
+p {
+  color: var(--Light-Grey, #969fad);
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+img {
+  width: min-content;
+}
+
+#rating-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+  width: 20.4375rem;
+  height: 22.5rem;
+  flex-shrink: 0;
+  border-radius: 0.9375rem;
+  background: var(
+    --black-gradient,
+    radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%)
+  );
+  padding: 1.5rem;
+  position: relative;
+}
+
+#div-star {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  background-color: var(--Dark-Blue, #262e38);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  margin-bottom: 0.38rem;
+}
+
+#div-score {
+  width: 100%;
+  margin-top: 0.88rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+#button-submit {
+  margin-top: 0.88rem;
+  height: 2.8125rem;
+  width: 100%;
+  border-radius: 1.40625rem;
+  background: var(--Orange, #fc7614);
+  border: none;
+  color: white;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.11669rem;
+}
+
+#button-submit:hover {
+  background-color: white;
+  color: var(--Orange, #fc7614);
+  cursor: pointer;
+}
+
+#div-thank {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 0.9375rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.62rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#div-response {
+  margin: 0.88rem 0;
+  padding: 0.31rem;
+  border-radius: 1.40625rem;
+  background: var(--Dark-Blue, #262e38);
+  width: 10.5rem;
+  height: 2rem;
+  flex-shrink: 0;
+  color: var(--Orange, #fc7614);
+  text-align: center;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+.score-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--Dark-Blue, #262e38);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: none;
+  color: var(--Medium-Gray, #7c8798);
+  text-align: center;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.01094rem;
+}
+
+.selectioned {
+  background-color: var(--Orange, #fc7614);
+  color: white;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 12.1875rem 0rem 11.8125rem 0rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+  }
+
+  #rating-div {
+    gap: 0.44rem;
+    width: 25.75rem;
+    height: 26rem;
+    padding: 2rem 2.5rem 2rem 2rem;
+  }
+
+  #div-star {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1.43rem;
+  }
+
+  #div-score {
+    margin-top: 1.06rem;
+  }
+
+  #button-submit {
+    margin-top: 1.56rem;
+    width: 21.3125rem;
+    height: 2.8125rem;
+    font-size: 0.9375rem;
+    letter-spacing: 0.125rem;
+  }
+
+  #div-thank {
+    padding: 2.81rem 2.5rem 2.81rem 2rem;
+    gap: 0.44rem;
+  }
+
+  #div-response {
+    margin: 1.56rem 0;
+    padding: 0.25rem 0;
+    width: 12.0625rem;
+    height: 2rem;
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+  }
+
+  .score-button {
+    width: 3.1875rem;
+    height: 3.1875rem;
+    font-size: 1rem;
+    letter-spacing: 0.0125rem;
+  }
+
+  .score-button:hover {
+    opacity: 0.8;
+    color: white;
+    cursor: pointer;
+  }
+}
